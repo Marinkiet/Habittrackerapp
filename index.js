@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://marinkie:gomongo@cluster0.hpjmhdc.mongodb.net/")
+mongoose.connect("mongodb+srv://{uname}:{password}@cluster0.hpjmhdc.mongodb.net/")
     .then(() => {
         console.log("Connected to mongodb")
     }).catch((error) => {
